@@ -11,7 +11,7 @@ The boilerplate code includes
 - A web app provides a logout feature
 - A successful login leads to a projects page
 - The projects page is accessible only to authenticated users
-- A web app provides a password-reset feature 
+- A web app provides a password-reset feature via an email
 - An app supports a json token for authentication, storing the token locally (frontend)
 - A web app also supports a session authentication, storing a sessionid in the database
 - A web app supports APIs
@@ -87,9 +87,9 @@ Use Cases
 - Register, login, logout
 
 ## Reference
-[Django Authentication](https://docs.djangoproject.com/en/3.2/topics/auth/default/)
-[Django REST framework - JSON Web Token Authentication](https://www.django-rest-framework.org/api-guide/authentication/#json-web-token-authentication)
-[Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
-[JWT](https://jwt.io)
-[JWT token](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html)
-[Django CORS](https://pypi.org/project/django-cors-headers/)
+* [Django Authentication](https://docs.djangoproject.com/en/3.2/topics/auth/default/)
+* [Django REST framework - JSON Web Token Authentication](https://www.django-rest-framework.org/api-guide/authentication/#json-web-token-authentication)
+* [Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
+* [JWT](https://jwt.io)
+* [JWT token](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html)
+* [Django CORS](https://pypi.org/project/django-cors-headers/)
