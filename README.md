@@ -1,4 +1,4 @@
-# Django Auth (DAuth) Boilerplate
+# Django Auth (DAuth) Boilerplate - Django + Authentication + REST API
 The objective of the boilerplate code is to provide user authentication using postgreSQL.
 
 ## Requirements
@@ -8,6 +8,8 @@ The objective of the boilerplate code is to provide user authentication using po
 - A successful login leads to a projects page
 - The projects page is accessible only to authenticated users
 - A web app provides a password-reset feature 
+- A web app supports a json token for authentication, stored in a cookie
+- A web app supports APIs
 - Endpoints
     - users/login
     - users/logout
@@ -48,6 +50,9 @@ Apps include home, projects, and users.
 (dauth) $ python manage.py migrate
 ```
 
+### Create an independent frontend app
+- frontend
+
 ## Instruction
 Set configuration
 ```shell
@@ -67,12 +72,19 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 ```
 
-
-
 Run a web app
 ```shell
 (dauth) $ python manage.py runserver
 ```
 
+Use Cases
+- Open frontend/login.html in your browser and then try with login and logout
+- Register, login, logout
+
 ## Reference
 [Django Authentication](https://docs.djangoproject.com/en/3.2/topics/auth/default/)
+[Django REST framework - JSON Web Token Authentication](https://www.django-rest-framework.org/api-guide/authentication/#json-web-token-authentication)
+[Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
+[JWT](https://jwt.io)
+[JWT token](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html)
+[Django CORS](https://pypi.org/project/django-cors-headers/)
