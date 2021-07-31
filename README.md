@@ -1,5 +1,9 @@
-# Django Auth (DAuth) Boilerplate - Django + Authentication + REST API
-The objective of the boilerplate code is to provide user authentication using postgreSQL.
+# Django-based Auth (DAuth) Boilerplate - Django + Authentication + REST API + Frontend App
+The boilerplate code includes
+- Django authentication
+- Django REST APIs
+- Login, Logout, Register templates
+- An independent frontend app that communicates with the REST APIs
 
 ## Requirements
 - A web app provides a login feature
