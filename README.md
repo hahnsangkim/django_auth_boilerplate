@@ -1,4 +1,4 @@
-# Django-based Auth (DAuth) Boilerplate - Django + Authentication + REST API + Frontend App
+# Django-based Auth Boilerplate - Django + Authentication + REST API + Frontend App
 The boilerplate code includes
 - Django authentication
 - Django REST APIs
@@ -27,12 +27,12 @@ The boilerplate code includes
 ```shell
 $ django-admin startproject dauth
 $ cd dauth
-(dauth) $ pipenv shell --python=3
+django_auth_boilerplate $ pipenv shell --python=3
 ```
 
 ### Create a superuser
 ```shell
-(dauth) $ python manage.py createsuperuser
+django_auth_boilerplate $ python manage.py createsuperuser
 Username: admin
 Email address: admin@example.com
 Password: **********
@@ -46,13 +46,13 @@ Generate an alternative password for sending a welcome email. Go to _myaccount.g
 ### Create apps
 Apps include home, projects, and users.
 ```shell
-(dauth) $ python manage.py startapp users
+django_auth_boilerplate $ python manage.py startapp users
 ```
 
 ### Update tables
 ```shell
-(dauth) $ python manage.py makemigrations
-(dauth) $ python manage.py migrate
+django_auth_boilerplate $ python manage.py makemigrations
+django_auth_boilerplate $ python manage.py migrate
 ```
 
 ### Create an independent frontend app
@@ -61,8 +61,10 @@ Apps include home, projects, and users.
 ## Instruction
 Set configuration
 ```shell
-(dauth) $ cp sample.env .env
-(dauth) $ vi .env
+$ git clone https://github.com/hahnsangkim/django_auth_boilerplate.git
+$ cd django_auth_boilerplate
+(django_auth_boilerplate) $ cp sample.env .env
+django_auth_boilerplate $ vi .env
 # Set following parameters to your values
 PG_NAME=''
 PG_USER=''
@@ -79,7 +81,7 @@ EMAIL_HOST_PASSWORD = ''
 
 Run a web app
 ```shell
-(dauth) $ python manage.py runserver
+django_auth_boilerplate $ python manage.py runserver
 ```
 
 Use Cases
