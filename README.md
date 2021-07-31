@@ -12,7 +12,8 @@ The boilerplate code includes
 - A successful login leads to a projects page
 - The projects page is accessible only to authenticated users
 - A web app provides a password-reset feature 
-- A web app supports a json token for authentication, stored in a cookie
+- An app supports a json token for authentication, storing the token locally (frontend)
+- A web app also supports a session authentication, storing a sessionid in the database
 - A web app supports APIs
 - Endpoints
     - users/login
